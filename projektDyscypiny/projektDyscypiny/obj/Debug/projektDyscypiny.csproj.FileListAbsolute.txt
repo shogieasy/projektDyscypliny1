@@ -1,0 +1,16 @@
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\bin\Debug\projektDyscypiny.exe.config
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\bin\Debug\projektDyscypiny.exe
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\bin\Debug\projektDyscypiny.pdb
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\projektDyscypiny.csprojAssemblyReference.cache
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\GlowneMenu.g.cs
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\MainWindow.g.cs
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\App.g.cs
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\projektDyscypiny_MarkupCompile.cache
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\projektDyscypiny_MarkupCompile.lref
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\MainWindow.baml
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\GlowneMenu.baml
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\projektDyscypiny.g.resources
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\projektDyscypiny.Properties.Resources.resources
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\projektDyscypiny.csproj.GenerateResource.cache
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\projektDyscypiny.exe
+C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\projektDyscypiny.pdb

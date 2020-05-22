@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace projektDyscypiny
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for GlowneMenu.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class GlowneMenu : Page
     {
-        public MainWindow()
+        public GlowneMenu()
         {
             InitializeComponent();
-            GlowneOkno.Content = new GlowneMenu();
         }
     }
 }
