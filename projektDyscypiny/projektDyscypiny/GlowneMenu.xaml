@@ -10,7 +10,7 @@
 
     <Grid >
         <Grid.Background>
-            <ImageBrush ImageSource="a.jpg"/>
+            <ImageBrush ImageSource="tlo.jpg"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -20,7 +20,7 @@
 
         </Grid.ColumnDefinitions>
         
-        <Border Opacity="0.7" Background="#d1d1c9" Margin="0,15,0,15" BorderBrush="#d1d1c9" BorderThickness="2" CornerRadius="10" Grid.Column="1">
+        <Border Opacity="0.9" Background="#d1d1c9" Margin="0,25,0,25" BorderBrush="#d1d1c9" BorderThickness="2" CornerRadius="10" Grid.Column="1">
             <Grid >
                 <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -32,7 +32,7 @@
 
             </Grid.RowDefinitions>
 
-            <StackPanel Margin="5,0,5,0" Grid.Row="1" Background="#8a8a88">
+            <StackPanel Margin="0,0,0,0" Grid.Row="1" Background="#8a8a88">
                 <Label Foreground="#292926" Margin="0,5,0,0" FontSize="24" HorizontalAlignment="Center" FontWeight="Bold" >
                     WYBIERZ
                 </Label>
