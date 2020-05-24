@@ -9,6 +9,7 @@
       Title="DwaOgnie">
 
     <StackPanel >
+        <Grid></Grid>
 
         <StackPanel.Background>
             <ImageBrush ImageSource="tloDwaOgnie.jpg"/>
