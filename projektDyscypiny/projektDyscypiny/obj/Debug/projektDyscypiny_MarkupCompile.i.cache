@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\
+C:\Users\rafal\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\obj\Debug\
 projektDyscypiny
 none
 false
 DEBUG;TRACE
-C:\Users\shogi\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\App.xaml
-2-1048108678
+C:\Users\rafal\Documents\GitHub\projektDyscypliny\projektDyscypiny\projektDyscypiny\App.xaml
+11232067582
 
-7-1895961491
+161595432562
 13-1505183044
-GlowneMenu.xaml;MainWindow.xaml;
+DwaOgnie.xaml;GlowneMenu.xaml;MainWindow.xaml;PrzeciaganieLiny.xaml;Siatkowka.xaml;TurniejDwaOgnie.xaml;TurniejPrzeciaganieLiny.xaml;TurniejSiatkowka.xaml;WynikiDwaOgnie.xaml;WynikiPrzeciaganieLiny.xaml;WynikiSiatkowka.xaml;
 
-False
+True
 

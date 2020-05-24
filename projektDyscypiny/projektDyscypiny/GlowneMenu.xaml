@@ -10,7 +10,7 @@
 
     <Grid >
         <Grid.Background>
-            <ImageBrush ImageSource="tlo.jpg"/>
+            <ImageBrush ImageSource="tloMenu.jpg"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -19,36 +19,53 @@
 
 
         </Grid.ColumnDefinitions>
-        
-        <Border Opacity="0.9" Background="#d1d1c9" Margin="0,25,0,25" BorderBrush="#d1d1c9" BorderThickness="2" CornerRadius="10" Grid.Column="1">
+
+        <Border   Margin="0,25,0,25" BorderBrush="#f5e7ca" BorderThickness="2" CornerRadius="10"  Grid.Column="1">
+            <Border.Background>
+                <SolidColorBrush Color="#f5e7ca" Opacity="0.3" />
+            </Border.Background>
             <Grid >
-                <Grid.RowDefinitions>
-                <RowDefinition/>
+                <Grid.RowDefinitions >
+                    <RowDefinition />
                 <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition />
 
             </Grid.RowDefinitions>
 
-            <StackPanel Margin="0,0,0,0" Grid.Row="1" Background="#8a8a88">
-                <Label Foreground="#292926" Margin="0,5,0,0" FontSize="24" HorizontalAlignment="Center" FontWeight="Bold" >
-                    WYBIERZ
+                <StackPanel Margin="0,0,0,0" Grid.Row="1" >
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="#f2d38f" Opacity="0.6" />
+                    </StackPanel.Background>
+                        <Label  Foreground="#292926" Margin="0,5,0,0" FontSize="24" HorizontalAlignment="Center" FontWeight="Bold" >
+                        
+                        WYBIERZ
                 </Label>
+                    
 
-                <Label Foreground="#292926" Margin="0,0,0,0" FontSize="24" HorizontalAlignment="Center" FontWeight="Bold">
+                    <Label Foreground="#292926" Margin="0,0,0,0" FontSize="24" HorizontalAlignment="Center" FontWeight="Bold">
                     DYSCYPLINE
                 </Label>
             </StackPanel>
                 <StackPanel Grid.Row="2" Grid.RowSpan="3">
-                    <Button FontWeight="Bold" Foreground="#292926"  BorderBrush="LightGray" Background="LightGray" Margin="0,22,0,20" Grid.Row="2" FontSize="20" Width="200" Height="35">
+                    <Button FontWeight="Bold" Foreground="#292926"  BorderBrush="#fff1ae"  Margin="0,22,0,20" Grid.Row="2" FontSize="20" Width="200" Height="35" Click="DwaOgnieClick">
+                        <Button.Background>
+                            <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                        </Button.Background>
                         Dwa ognie
                     </Button>
-                    <Button FontWeight="Bold" Foreground="#292926" BorderBrush="LightGray" Background="LightGray" Margin="0,0,0,20" Grid.Row="3" FontSize="20" Width="200" Height="35">
+                    <Button FontWeight="Bold" Foreground="#292926" BorderBrush="#fff1ae"  Margin="0,0,0,20" Grid.Row="3" FontSize="20" Width="200" Height="35" Click="SiatkowkaClick">
+                        <Button.Background>
+                            <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                        </Button.Background>
                         Siatkówa
                     </Button>
-                    <Button FontWeight="Bold" Foreground="#292926" BorderBrush="LightGray" Background="LightGray" Grid.Row="4" FontSize="20" Width="200" Height="35" >
+                    <Button FontWeight="Bold" Foreground="#292926" BorderBrush="#fff1ae"  Grid.Row="4" FontSize="20" Width="200" Height="35" Click="PrzeciaganieLinyClick" >
+                        <Button.Background>
+                            <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                        </Button.Background>
                         Przeciąganie liny
                     </Button>
                 </StackPanel>

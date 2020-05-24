@@ -1,0 +1,228 @@
+﻿<Page x:Class="projektDyscypiny.TurniejSiatkowka"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:projektDyscypiny"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TurniejSiatkowka">
+
+    <StackPanel >
+
+        <StackPanel.Background>
+            <ImageBrush ImageSource="tloSiatkowka.jpg"/>
+        </StackPanel.Background>
+
+        <TabControl Height="350" BorderBrush="#f5e7ca"  Foreground="#292926" BorderThickness="2" >
+            <TabControl.Background>
+                <SolidColorBrush Color="#f5e7ca" Opacity="0.3" />
+            </TabControl.Background>
+
+            <TabItem Header="Turniej" BorderBrush="#f5e7ca">
+                <TabItem.Background>
+                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                </TabItem.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition />
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition />
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition />
+                        <RowDefinition Height="auto"/>
+                        
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Button BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="150" Margin="6" Grid.ColumnSpan="2" Click="WynikiTurniejuClick"  >
+                        <Button.Background>
+                            <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
+                        </Button.Background>
+                        Wprowadź wynik
+                    </Button>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"   Grid.Row="1" Grid.ColumnSpan="2">
+
+                        <Label FontWeight="Medium"  FontSize="14"  HorizontalAlignment="Center">
+                            Aktualny status rozgrywek:
+                        </Label>
+                        <Label         FontSize="14" HorizontalAlignment="Center">
+                            XXXXXX
+                        </Label>
+
+                    </StackPanel>
+
+
+                    <StackPanel HorizontalAlignment="Center" Grid.Row="3">
+
+                        <Label  FontSize="14"  HorizontalAlignment="Center">
+                            Zasady:
+                        </Label>
+                        <Label>
+                            2 sety po 21 punktów.
+                        </Label>
+                        <Label>
+                            Drużyna wygrana musi mieć 2-punktową przewagę.
+                        </Label>
+                        <Label>
+                            W przypadku 1:1 gramy dalej do 15 punktów (bez przewagi)
+                        </Label>
+
+                    </StackPanel>
+
+                    <Grid Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+
+                        </Grid.ColumnDefinitions>
+                        
+                        <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                            <Label HorizontalAlignment="Center">
+                                I SET
+                            </Label>
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel>
+
+                                    <Label Grid.Column="0" >
+                                Druzyna A
+                            </Label>
+                            <TextBox  Width="50"></TextBox>
+                                </StackPanel>
+
+                                <Label FontWeight="Medium" Grid.Column="1" >
+                                    VS
+                                </Label>
+
+                                <StackPanel Grid.Column="2">
+
+                                    <Label Grid.Column="1" >
+                                        Druzyna B
+                                    </Label>
+                                    <TextBox  Width="50"></TextBox>
+                                </StackPanel>
+
+                            </Grid>
+                            
+
+                        </StackPanel>
+                        <StackPanel HorizontalAlignment="Center" Grid.Column="1">
+                            <Label HorizontalAlignment="Center">
+                                II SET
+                            </Label>
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel>
+
+                                    <Label Grid.Column="0" >
+                                        Druzyna A
+                                    </Label>
+                                    <TextBox  Width="50"></TextBox>
+                                </StackPanel>
+
+                                <Label FontWeight="Medium" Grid.Column="1" >
+                                    VS
+                                </Label>
+
+                                <StackPanel Grid.Column="2">
+
+                                    <Label Grid.Column="1" >
+                                        Druzyna B
+                                    </Label>
+                                    <TextBox  Width="50"></TextBox>
+                                </StackPanel>
+
+                            </Grid>
+
+
+                        </StackPanel>
+                        <StackPanel HorizontalAlignment="Center" Grid.Column="2">
+                            <Label HorizontalAlignment="Center">
+                                III SET(Jesli jest 1:1)
+                            </Label>
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel>
+
+                                    <Label Grid.Column="0" >
+                                        Druzyna A
+                                    </Label>
+                                    <TextBox  Width="50"></TextBox>
+                                </StackPanel>
+
+                                <Label FontWeight="Medium" Grid.Column="1" >
+                                    VS
+                                </Label>
+
+                                <StackPanel Grid.Column="2">
+
+                                    <Label Grid.Column="1" >
+                                        Druzyna B
+                                    </Label>
+                                    <TextBox  Width="50"></TextBox>
+                                </StackPanel>
+
+                            </Grid>
+
+
+                        </StackPanel>
+
+
+
+
+
+
+
+                    </Grid>
+
+
+                </Grid>
+
+
+
+            </TabItem>
+            <TabItem Header="Ranking" BorderBrush="#f5e7ca">
+                <TabItem.Background>
+                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                </TabItem.Background>
+
+
+            </TabItem>
+            <TabItem Header="Wyniki meczy" BorderBrush="#f5e7ca">
+                <TabItem.Background>
+                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                </TabItem.Background>
+
+
+            </TabItem>
+
+        </TabControl>
+
+
+    </StackPanel>
+</Page>

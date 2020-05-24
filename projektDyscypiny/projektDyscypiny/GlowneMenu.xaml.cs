@@ -24,5 +24,20 @@ namespace projektDyscypiny
         {
             InitializeComponent();
         }
+
+        private void DwaOgnieClick(object sender, RoutedEventArgs e)
+        {
+            ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new DwaOgnie();
+        }
+
+        private void SiatkowkaClick(object sender, RoutedEventArgs e)
+        {
+            ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new Siatkowka();
+        }
+
+        private void PrzeciaganieLinyClick(object sender, RoutedEventArgs e)
+        {
+            ((MainWindow)System.Windows.Application.Current.MainWindow).GlowneOkno.Content = new PrzeciaganieLiny();
+        }
     }
 }

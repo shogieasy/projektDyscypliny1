@@ -1,0 +1,502 @@
+﻿<Page x:Class="projektDyscypiny.Siatkowka"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:projektDyscypiny"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Siatkowka">
+
+    <StackPanel >
+
+        <StackPanel.Background>
+            <ImageBrush ImageSource="tloSiatkowka.jpg"/>
+        </StackPanel.Background>
+
+
+
+        <TabControl Height="350" BorderBrush="#f5e7ca"  Foreground="#292926" BorderThickness="2" >
+            <TabControl.Background>
+                <SolidColorBrush Color="#f5e7ca" Opacity="0.3" />
+            </TabControl.Background>
+
+            <TabItem Header="Odczyt danych" BorderBrush="#f5e7ca">
+                <TabItem.Background>
+                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                </TabItem.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Button BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="3" Width="100" Margin="15" Grid.ColumnSpan="2"  >
+                        <Button.Background>
+                            <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
+                        </Button.Background>
+                        OK
+                    </Button>
+
+                    <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
+
+                        <Label  FontSize="14"  HorizontalAlignment="Center">
+                            Wprowadź nazwę pliku z którego chcesz wczytać dane
+                        </Label>
+                        <Label         FontSize="14" HorizontalAlignment="Center">
+                            (jeśli nie masz go stworzonego, możesz skorzystać z pliku "daneSiatkowka")
+                        </Label>
+
+                    </StackPanel>
+                    <TextBox Grid.Row="2" Width="200" Height="22">
+
+                    </TextBox>
+
+                </Grid>
+
+
+
+            </TabItem>
+
+
+
+
+
+            <TabItem Header="Sędziowie" BorderBrush="#f5e7ca" >
+                <TabItem.Background>
+                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                </TabItem.Background>
+                <TabControl BorderThickness="0">
+
+                    <TabControl.Background>
+                        <SolidColorBrush Color="#f0d292" Opacity="0.0" />
+                    </TabControl.Background>
+                    <TabItem  Header="dodaj" BorderBrush="#f5e7ca" >
+                        <TabItem.Background>
+                            <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                        </TabItem.Background>
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Label HorizontalAlignment="Center" Grid.Row="1">
+                                Wprowadź imie
+                            </Label>
+                            <TextBox HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="2" >
+
+                            </TextBox>
+
+                            <Label HorizontalAlignment="Center" Grid.Row="4">
+                                Wprowadź nazwisko
+                            </Label>
+
+                            <TextBox HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="5" >
+
+                            </TextBox>
+
+                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
+                                <Button.Background>
+                                    <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
+                                </Button.Background>
+                                OK
+                            </Button>
+
+
+
+
+                        </Grid>
+                    </TabItem>
+
+                    <TabItem  Header="usuń" BorderBrush="#f5e7ca" >
+                        <TabItem.Background>
+                            <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                        </TabItem.Background>
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Label HorizontalAlignment="Center" Grid.Row="2">
+                                Wprowadź ID sędziego którego chcesz wycofać
+                            </Label>
+                            <Label HorizontalAlignment="Center" Grid.Row="3">
+                                (ID można sprawdzić w opcji "szukaj" lub "wyświetl")
+                            </Label>
+                            <TextBox HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+
+                            </TextBox>
+
+
+
+                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1"   >
+                                <Button.Background>
+                                    <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
+                                </Button.Background>
+                                OK
+                            </Button>
+
+
+
+
+                        </Grid>
+
+                    </TabItem>
+                    <TabItem Header="wyświetl" BorderBrush="#f5e7ca" >
+                        <TabItem.Background>
+                            <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                        </TabItem.Background>
+                    </TabItem>
+                    <TabItem Header="szukaj" BorderBrush="#f5e7ca" >
+                        <TabItem.Background>
+                            <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                        </TabItem.Background>
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+
+                            <Label HorizontalAlignment="Center" Grid.Row="3">
+                                Podaj ID
+                            </Label>
+                            <TextBox HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+
+                            </TextBox>
+
+
+
+                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
+                                <Button.Background>
+                                    <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
+                                </Button.Background>
+                                Szukaj
+                            </Button>
+
+
+
+
+                        </Grid>
+                    </TabItem>
+
+                </TabControl>
+
+            </TabItem>
+
+            <TabItem Header="Drużyny" BorderBrush="#f5e7ca" >
+                <TabItem.Background>
+                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                </TabItem.Background>
+
+                <TabControl  BorderThickness="0">
+                    <TabControl.Background>
+                        <SolidColorBrush Color="#f0d292" Opacity="0.0" />
+                    </TabControl.Background>
+
+                    <TabItem Header="dodaj" BorderBrush="#f5e7ca" >
+
+                        <TabItem.Background>
+                            <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                        </TabItem.Background>
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+
+
+                            <Label HorizontalAlignment="Center" Grid.Row="3">
+                                Wprowadź nazwe drużyny
+                            </Label>
+
+                            <TextBox HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+
+                            </TextBox>
+
+                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
+                                <Button.Background>
+                                    <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
+                                </Button.Background>
+                                OK
+                            </Button>
+
+
+
+
+                        </Grid>
+
+                    </TabItem>
+                    <TabItem Header="wycofaj" BorderBrush="#f5e7ca"  >
+                        <TabItem.Background>
+                            <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                        </TabItem.Background>
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Label HorizontalAlignment="Center" Grid.Row="2">
+                                Wprowadź ID drużyny którą chcesz wycofać
+                            </Label>
+                            <Label HorizontalAlignment="Center" Grid.Row="3">
+                                (ID można sprawdzić w opcji "szukaj" lub "wyświetl")
+                            </Label>
+                            <TextBox HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+
+                            </TextBox>
+
+
+
+                            <Button HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1" Grid.ColumnSpan="2"  >
+                                <Button.Background>
+                                    <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
+                                </Button.Background>
+                                OK
+                            </Button>
+
+
+
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="wyświetl" BorderBrush="#f5e7ca">
+                        <TabItem.Background>
+                            <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                        </TabItem.Background>
+                    </TabItem>
+                    <TabItem Header="szukaj" BorderBrush="#f5e7ca">
+                        <TabItem.Background>
+                            <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                        </TabItem.Background>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+
+
+
+
+
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+
+                                <RowDefinition/>
+
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Label Grid.Column="0" HorizontalAlignment="Center" Grid.Row="3">
+                                Podaj ID
+                            </Label>
+                            <TextBox Grid.Column="0" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="4" >
+
+                            </TextBox>
+
+
+                            <Label Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1">
+                                Podaj imie
+                            </Label>
+                            <Label Grid.Column="1" HorizontalAlignment="Center" Grid.Row="4">
+                                Podaj nazwisko
+                            </Label>
+
+                            <TextBox Grid.Column="1" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="5" >
+
+                            </TextBox>
+                            <TextBox Grid.Column="1" HorizontalAlignment="Center" Width="200" Height="22" Grid.Row="2" >
+
+                            </TextBox>
+
+                            <Button Grid.Column="0" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1"   >
+                                <Button.Background>
+                                    <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
+                                </Button.Background>
+                                Szukaj
+                            </Button>
+
+                            <Button Grid.Column="1" HorizontalAlignment="Center" BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="7" Width="100" Margin="1"  >
+                                <Button.Background>
+                                    <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
+                                </Button.Background>
+                                Szukaj
+                            </Button>
+
+
+
+
+
+
+                        </Grid>
+                    </TabItem>
+
+                </TabControl>
+
+            </TabItem>
+            <TabItem Header="Turniej" BorderBrush="#f5e7ca">
+                <TabItem.Background>
+                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                </TabItem.Background>
+                <Grid>
+
+
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+
+
+
+                    </Grid.RowDefinitions>
+                    <Button BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="2" Width="150" Margin="15" Grid.ColumnSpan="2" Click="RozpocznijTurniejClick" >
+                        <Button.Background>
+                            <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
+                        </Button.Background>
+                        Rozpocznij turniej
+                    </Button>
+                    <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
+
+                        <Label  FontSize="14"  HorizontalAlignment="Center">
+                            Jeśli chcesz rozpocząć turniej SIATKÓWKI w bazie musi być co najmniej: 3 sędziów i 4 drużyny
+                        </Label>
+                        <Label         FontSize="14" HorizontalAlignment="Center">
+                            (uwaga! po rozpoczęciu turnieju nie będzie możliwości dodania nowej drużyny)
+                        </Label>
+
+                    </StackPanel>
+
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Ranking" BorderBrush="#f5e7ca">
+                <TabItem.Background>
+                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                </TabItem.Background>
+
+
+            </TabItem>
+            <TabItem Header="Zapis danych" BorderBrush="#f5e7ca">
+                <TabItem.Background>
+                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                </TabItem.Background>
+
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Button BorderBrush="#fff1ae" FontWeight="Medium" FontSize="14" Grid.Row="2" Width="150" Margin="15" Grid.ColumnSpan="2"  >
+                        <Button.Background>
+                            <SolidColorBrush  Color="#f0d292" Opacity="0.6" />
+                        </Button.Background>
+                        Zapisz dane
+                    </Button>
+
+
+
+                </Grid>
+            </TabItem>
+
+
+
+        </TabControl>
+
+        <Grid >
+
+            <Button HorizontalAlignment="Left" Width="150" Margin="10" Click="Powrot" FontWeight="Bold" Foreground="#292926" BorderBrush="#fff1ae">
+                <Button.Background>
+                    <SolidColorBrush Color="#f0d292" Opacity="0.6" />
+                </Button.Background>
+                Powrót
+            </Button>
+
+
+
+        </Grid>
+
+
+
+    </StackPanel>
+</Page>

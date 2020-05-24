@@ -55,6 +55,34 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="PrzeciaganieLiny.xaml.cs">
+      <DependentUpon>PrzeciaganieLiny.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Siatkowka.xaml.cs">
+      <DependentUpon>Siatkowka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TurniejDwaOgnie.xaml.cs">
+      <DependentUpon>TurniejDwaOgnie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TurniejPrzeciaganieLiny.xaml.cs">
+      <DependentUpon>TurniejPrzeciaganieLiny.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TurniejSiatkowka.xaml.cs">
+      <DependentUpon>TurniejSiatkowka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WynikiDwaOgnie.xaml.cs">
+      <DependentUpon>WynikiDwaOgnie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WynikiPrzeciaganieLiny.xaml.cs">
+      <DependentUpon>WynikiPrzeciaganieLiny.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WynikiSiatkowka.xaml.cs">
+      <DependentUpon>WynikiSiatkowka.xaml</DependentUpon>
+    </Compile>
+    <Page Include="DwaOgnie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GlowneMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -67,6 +95,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DwaOgnie.xaml.cs">
+      <DependentUpon>DwaOgnie.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GlowneMenu.xaml.cs">
       <DependentUpon>GlowneMenu.xaml</DependentUpon>
     </Compile>
@@ -74,6 +105,38 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PrzeciaganieLiny.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Siatkowka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TurniejDwaOgnie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TurniejPrzeciaganieLiny.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TurniejSiatkowka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WynikiDwaOgnie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WynikiPrzeciaganieLiny.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WynikiSiatkowka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -102,7 +165,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="tlo.jpg" />
+    <Resource Include="tloMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tloPrzeciaganieLiny.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tloSiatkowka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tloDwaOgnie.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
