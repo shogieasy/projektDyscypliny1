@@ -55,9 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Mecz.cs" />
     <Compile Include="PrzeciaganieLiny.xaml.cs">
       <DependentUpon>PrzeciaganieLiny.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Sedzia.cs" />
     <Compile Include="Siatkowka.xaml.cs">
       <DependentUpon>Siatkowka.xaml</DependentUpon>
     </Compile>
